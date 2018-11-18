@@ -1,0 +1,28 @@
+/*
+ * Copyright (c) 2018.
+ */
+
+plugins {
+    id 'java'
+}
+
+group 'com.mbrain'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'net.dv8tion:JDA:3.8.1_439'
+    compile 'com.jagrosh:jda-utilities:2.1.4'
+    compile 'com.mashape.unirest:unirest-java:1.4.9'
+    compile "org.slf4j:slf4j-simple:1.6.1"
+    compile 'org.apache.commons:commons-lang3:3.6'
+    compile 'com.google.code.gson:gson:2.8.5'
+
+}
